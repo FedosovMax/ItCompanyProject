@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+
+	<persistence-unit name="persistence">
+		<class>com.maksymfedosov.entity.Developer</class>
+		<class>com.maksymfedosov.entity.Company</class>
+		<class>com.maksymfedosov.entity.Customer</class>
+		<class>com.maksymfedosov.entity.Language</class>
+		<class>com.maksymfedosov.entity.Project</class>
+		<class>com.maksymfedosov.entity.SkillLevel</class>
+
+		<properties>
+			<property name="hibernate.connection.url" value="jdbc:mysql://localhost/programmers?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+			<property name="hibernate.connection.username" value="root"/>
+			<property name="hibernate.connection.password" value="root"/>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+			<property name="hibernate.hbm2ddl.auto" value="update"/>
+			<property name="hibernate.show_sql" value="false"/>
+			<property name="hibernate.format_sql" value="true"/>
+		</properties>
+	</persistence-unit>
+
+</persistence>
+
